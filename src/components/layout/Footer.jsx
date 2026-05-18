@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import {  MessageCircle } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 import deunaLogo from '../../assets/deuna-logo.svg'
 
-const whatsappNumber = '59177670148'
+const whatsappNumber = '59177242932'
 
 function InstagramIcon(props) {
   return (
@@ -30,21 +30,34 @@ function TikTokIcon(props) {
   )
 }
 
+function LinkedinIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M6.5 8.8H3V21h3.5V8.8ZM4.8 3C3.7 3 3 3.8 3 4.8s.7 1.8 1.8 1.8 1.8-.8 1.8-1.8S5.9 3 4.8 3ZM21 14c0-3.5-1.9-5.4-4.5-5.4-2 0-2.9 1.1-3.4 1.9V8.8H9.6V21h3.5v-6.4c0-1.7.9-2.7 2.3-2.7 1.3 0 2.1.9 2.1 2.7V21H21v-7Z" />
+    </svg>
+  )
+}
+
 const socialLinks = [
   {
     label: 'Facebook',
-    href: 'https://www.facebook.com/deuna.bo',
+    href: 'https://www.facebook.com/profile.php?id=61587280706036',
     icon: FacebookIcon,
   },
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/deuna.bo',
+    href: 'https://www.instagram.com/deuna.mkt/',
     icon: InstagramIcon,
   },
   {
     label: 'TikTok',
-    href: 'https://www.tiktok.com/@deuna.bo',
+    href: 'https://www.tiktok.com/@deuna.mkt',
     icon: TikTokIcon,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/deuna-mkt/posts/?feedView=all',
+    icon: LinkedinIcon,
   },
 ]
 
@@ -57,7 +70,7 @@ function Footer() {
             <img
               src={deunaLogo}
               alt="DE UNA Marketing y Publicidad"
-              className="h-18 w-auto brightness-0 invert"
+              className="h-[72px] w-auto brightness-0 invert"
             />
           </Link>
 
@@ -142,10 +155,9 @@ function Footer() {
                 size={17}
                 className="text-[#8c40f5] transition group-hover:text-white"
               />
-              <span>WhatsApp: 77670148</span>
+
+              <span>WhatsApp: 77242932</span>
             </a>
-
-
           </div>
         </div>
       </div>

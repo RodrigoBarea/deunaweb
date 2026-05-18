@@ -5,7 +5,7 @@ import { supabase } from '../lib/supabaseClient'
 import deunaSymbol from '../assets/deuna-symbol.svg'
 import servicesCover from '../assets/services-cover.jpg'
 import BlogCarousel from "../components/BlogCarousel";
-
+import pdcaSystem from '../assets/pdca-system.png'
 
 const fallbackProjects = [
   {
@@ -171,10 +171,14 @@ function Home() {
         </div>
       </section>
 {/* QUIÉNES SOMOS */}
-<section className="bg-black px-6 py-28 text-white">
-  <div className="mx-auto max-w-7xl">
-    <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-      {/* lado izquierdo */}
+<section className="relative overflow-hidden bg-black px-6 py-28 text-white">
+  <div className="pointer-events-none absolute inset-0">
+    <div className="absolute right-[-240px] top-[-180px] h-[720px] w-[720px] rounded-full bg-[#8c40f5]/14 blur-[170px]" />
+  </div>
+
+  <div className="relative z-10 mx-auto max-w-7xl">
+    <div className="grid gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
+      {/* CONTENIDO */}
       <div>
         <p className="mb-5 text-xs font-black uppercase tracking-[0.4em] text-[#8c40f5]">
           Quiénes somos
@@ -185,103 +189,50 @@ function Home() {
           <span className="text-[#8c40f5]">.</span>
         </h2>
 
-        <div className="mt-10 rounded-[2rem] border border-white/10 bg-[#0b0b0b] p-7">
-          <p className="text-base leading-7 text-white/70">
-            DE UNA es una agencia de marketing y publicidad que diseña
-            sistemas de comunicación para marcas que quieren crecer con
-            claridad, coherencia e impacto real.
+        <div className="mt-10 rounded-[2rem] border border-white/10 bg-[#0b0b0b] p-7 md:p-8">
+          <p className="text-base leading-8 text-white/70">
+            DE UNA es una agencia de marketing y publicidad que diseña sistemas
+            de comunicación para marcas que quieren crecer con claridad,
+            coherencia e impacto real.
           </p>
 
-          <div className="mt-7 grid gap-5 md:grid-cols-2">
-            <div className="border-t border-white/10 pt-5">
-              <p className="mb-3 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            <div className="border-t border-white/10 pt-6">
+              <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
                 Misión
               </p>
 
               <p className="text-sm leading-7 text-white/60">
-                Ayudar a marcas, empresas e instituciones a comunicar mejor,
-                ordenar sus ideas y convertirlas en estrategias, contenidos
-                y acciones con resultados medibles.
+                Impulsar marcas con propósito a través de la creatividad
+                estratégica, la innovación y la eficiencia, generando impacto
+                real en las personas, en los negocios y en el entorno.
               </p>
             </div>
 
-            <div className="border-t border-white/10 pt-5">
-              <p className="mb-3 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+            <div className="border-t border-white/10 pt-6">
+              <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
                 Visión
               </p>
 
               <p className="text-sm leading-7 text-white/60">
-                Ser una agencia referente en comunicación estratégica,
-                creatividad e impacto, acompañando a marcas que buscan crecer
-                con propósito, estructura y dirección.
+                Ser la agencia creativa de nueva generación que redefine cómo
+                las marcas crean valor, liderando desde Bolivia hacia un modelo
+                de comunicación con triple impacto: económico, social y
+                ambiental.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* lado derecho */}
-      <div className="flex items-center justify-center">
-        <div className="grid w-full max-w-[760px] gap-5 sm:grid-cols-2">
-          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
-            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
-              01 / Estrategia
-            </p>
-
-            <h3 className="deuna-title-card text-2xl font-black uppercase">
-              Pensar antes de ejecutar.
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-white/60">
-              Ordenamos objetivos, mensajes y acciones para que la
-              comunicación tenga sentido y dirección.
-            </p>
-          </article>
-
-          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
-            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
-              02 / Identidad
-            </p>
-
-            <h3 className="deuna-title-card text-2xl font-black uppercase">
-              Marcas con estructura.
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-white/60">
-              Construimos sistemas visuales y verbales que hacen que una
-              marca se vea, se entienda y se recuerde mejor.
-            </p>
-          </article>
-
-          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
-            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
-              03 / Contenido
-            </p>
-
-            <h3 className="deuna-title-card text-2xl font-black uppercase">
-              Comunicación que mueve.
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-white/60">
-              Creamos contenido, campañas y piezas pensadas para conectar,
-              posicionar y activar decisiones.
-            </p>
-          </article>
-
-          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
-            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
-              04 / Impacto
-            </p>
-
-            <h3 className="deuna-title-card text-2xl font-black uppercase">
-              Resultados con propósito.
-            </h3>
-
-            <p className="mt-4 text-sm leading-7 text-white/60">
-              Diseñamos acciones que generan valor comercial, social y
-              ambiental desde una comunicación más consciente.
-            </p>
-          </article>
+      {/* INFOGRAFÍA */}
+      <div className="relative">
+        <div className="relative overflow-hidden rounded-[2rem]">
+          <img
+            src={pdcaSystem}
+            alt="PDCA DE UNA System"
+            className="h-auto w-full object-cover"
+          />
         </div>
       </div>
     </div>
