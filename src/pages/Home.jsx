@@ -86,11 +86,7 @@ function Home() {
 
   const visibleProjects = projects.length > 0 ? projects : fallbackProjects
 
-  const companyEmail = 'contacto@deuna.com.bo'
-  const emailSubject = encodeURIComponent('Quiero trabajar con DE UNA')
-  const emailBody = encodeURIComponent(
-    'Hola DE UNA, quiero recibir información sobre sus servicios. Me interesa conversar sobre una estrategia para mi marca.'
-  )
+
 
   return (
     <main className="bg-black text-white">
@@ -540,13 +536,13 @@ function Home() {
               })}
             </div>
 
-            <a
-              href={`mailto:${companyEmail}?subject=${emailSubject}&body=${emailBody}`}
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-black px-7 py-4 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:bg-[#8c40f5]"
-            >
-              Quiero una estrategia para mi marca
-              <ArrowUpRight size={18} />
-            </a>
+<Link
+  to="/contacto"
+  className="mt-10 inline-flex items-center gap-2 rounded-full bg-black px-7 py-4 text-sm font-black uppercase tracking-[0.16em] text-white transition hover:bg-[#8c40f5]"
+>
+  Quiero una estrategia para mi marca
+  <ArrowUpRight size={18} />
+</Link>
           </div>
         </div>
       </section>
