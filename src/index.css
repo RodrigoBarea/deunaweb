@@ -32,3 +32,25 @@ img {
   max-width: 100%;
   display: block;
 }
+
+@layer components {
+  .deuna-title-xl {
+    line-height: 0.98 !important;
+    letter-spacing: -0.055em;
+    padding-top: 0.04em;
+    padding-bottom: 0.03em;
+  }
+
+  .deuna-title-lg {
+    line-height: 1 !important;
+    letter-spacing: -0.05em;
+    padding-top: 0.03em;
+    padding-bottom: 0.02em;
+  }
+
+  .deuna-title-card {
+    line-height: 1.06 !important;
+    letter-spacing: -0.045em;
+    padding-top: 0.02em;
+  }
+}

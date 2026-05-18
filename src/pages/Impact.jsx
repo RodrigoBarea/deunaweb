@@ -100,7 +100,7 @@ function Impact() {
               Triple impacto
             </p>
 
-            <h1 className="max-w-5xl text-6xl font-black uppercase leading-[0.88] tracking-[-0.06em] md:text-8xl">
+            <h1 className="deuna-title-xl max-w-5xl text-6xl font-black uppercase md:text-8xl">
               Impacto real más allá de vender
               <span className="text-[#8c40f5]">.</span>
             </h1>
@@ -143,7 +143,7 @@ function Impact() {
               <p className="text-xs font-black uppercase tracking-[0.28em] text-white/70">
                 Enfoque
               </p>
-              <p className="mt-4 max-w-[220px] text-3xl font-black uppercase leading-none tracking-[-0.05em]">
+              <p className="deuna-title-card mt-4 max-w-[220px] text-3xl font-black uppercase">
                 Crecer con criterio.
               </p>
             </div>
@@ -159,7 +159,7 @@ function Impact() {
               Nuestra mirada
             </p>
 
-            <h2 className="max-w-3xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+            <h2 className="deuna-title-xl max-w-3xl text-5xl font-black uppercase md:text-7xl">
               No todo impacto se mide solo en ventas
               <span className="text-[#8c40f5]">.</span>
             </h2>
@@ -201,7 +201,7 @@ function Impact() {
                 Tres dimensiones
               </p>
 
-              <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.88] tracking-[-0.06em] md:text-7xl">
+              <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
                 Impacto económico, social y ambiental
                 <span className="text-[#8c40f5]">.</span>
               </h2>
@@ -242,7 +242,7 @@ function Impact() {
                     {pillar.title}
                   </p>
 
-                  <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em]">
+                  <h3 className="deuna-title-card text-3xl font-black uppercase">
                     {pillar.title.replace('Impacto ', '')}.
                   </h3>
 
@@ -281,7 +281,7 @@ function Impact() {
               Comunicación con sentido
             </p>
 
-            <h2 className="max-w-3xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+            <h2 className="deuna-title-xl max-w-3xl text-5xl font-black uppercase md:text-7xl">
               Comunicar mejor también es construir mejor
               <span className="text-[#8c40f5]">.</span>
             </h2>
@@ -312,7 +312,7 @@ function Impact() {
                 Cómo trabajamos
               </p>
 
-              <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+              <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
                 Primero entendemos, luego accionamos
                 <span className="text-[#8c40f5]">.</span>
               </h2>
@@ -345,7 +345,7 @@ function Impact() {
                     </span>
                   </div>
 
-                  <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em]">
+                  <h3 className="deuna-title-card text-3xl font-black uppercase">
                     {step.title}
                     <span className="text-[#8c40f5]">.</span>
                   </h3>
@@ -370,7 +370,7 @@ function Impact() {
               Hagamos impacto real
             </p>
 
-            <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+            <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
               Hagamos que tu marca crezca con dirección
               <span className="text-[#8c40f5]">.</span>
             </h2>

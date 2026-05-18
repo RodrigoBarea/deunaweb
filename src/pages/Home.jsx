@@ -100,7 +100,7 @@ function Home() {
 
         <div className="relative mx-auto w-full max-w-7xl">
           <div className="max-w-6xl">
-            <h1 className="text-[clamp(4rem,9.5vw,10rem)] font-black uppercase leading-[0.9] tracking-[-0.06em]">
+            <h1 className="deuna-title-xl text-[clamp(4rem,9.5vw,10rem)] font-black uppercase">
               Hacemos
               <span className="block">que las</span>
               <span className="block">
@@ -174,7 +174,123 @@ function Home() {
           </div>
         </div>
       </section>
+{/* QUIÉNES SOMOS */}
+<section className="bg-black px-6 py-28 text-white">
+  <div className="mx-auto max-w-7xl">
+    <div className="grid gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+      {/* lado izquierdo */}
+      <div>
+        <p className="mb-5 text-xs font-black uppercase tracking-[0.4em] text-[#8c40f5]">
+          Quiénes somos
+        </p>
 
+        <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
+          Una agencia que convierte ideas en dirección
+          <span className="text-[#8c40f5]">.</span>
+        </h2>
+
+        <div className="mt-10 rounded-[2rem] border border-white/10 bg-[#0b0b0b] p-7">
+          <p className="text-base leading-7 text-white/70">
+            DE UNA es una agencia de marketing y publicidad que diseña
+            sistemas de comunicación para marcas que quieren crecer con
+            claridad, coherencia e impacto real.
+          </p>
+
+          <div className="mt-7 grid gap-5 md:grid-cols-2">
+            <div className="border-t border-white/10 pt-5">
+              <p className="mb-3 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+                Misión
+              </p>
+
+              <p className="text-sm leading-7 text-white/60">
+                Ayudar a marcas, empresas e instituciones a comunicar mejor,
+                ordenar sus ideas y convertirlas en estrategias, contenidos
+                y acciones con resultados medibles.
+              </p>
+            </div>
+
+            <div className="border-t border-white/10 pt-5">
+              <p className="mb-3 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+                Visión
+              </p>
+
+              <p className="text-sm leading-7 text-white/60">
+                Ser una agencia referente en comunicación estratégica,
+                creatividad e impacto, acompañando a marcas que buscan crecer
+                con propósito, estructura y dirección.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* lado derecho */}
+      <div className="flex items-center justify-center">
+        <div className="grid w-full max-w-[760px] gap-5 sm:grid-cols-2">
+          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+              01 / Estrategia
+            </p>
+
+            <h3 className="deuna-title-card text-2xl font-black uppercase">
+              Pensar antes de ejecutar.
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-white/60">
+              Ordenamos objetivos, mensajes y acciones para que la
+              comunicación tenga sentido y dirección.
+            </p>
+          </article>
+
+          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+              02 / Identidad
+            </p>
+
+            <h3 className="deuna-title-card text-2xl font-black uppercase">
+              Marcas con estructura.
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-white/60">
+              Construimos sistemas visuales y verbales que hacen que una
+              marca se vea, se entienda y se recuerde mejor.
+            </p>
+          </article>
+
+          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+              03 / Contenido
+            </p>
+
+            <h3 className="deuna-title-card text-2xl font-black uppercase">
+              Comunicación que mueve.
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-white/60">
+              Creamos contenido, campañas y piezas pensadas para conectar,
+              posicionar y activar decisiones.
+            </p>
+          </article>
+
+          <article className="rounded-[1.8rem] border border-white/10 bg-[#0b0b0b] p-7 text-white">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+              04 / Impacto
+            </p>
+
+            <h3 className="deuna-title-card text-2xl font-black uppercase">
+              Resultados con propósito.
+            </h3>
+
+            <p className="mt-4 text-sm leading-7 text-white/60">
+              Diseñamos acciones que generan valor comercial, social y
+              ambiental desde una comunicación más consciente.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       {/* CIFRAS / DATOS RELEVANTES */}
       <section className="relative overflow-hidden bg-white px-6 py-24 text-black">
         <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[68vw] overflow-hidden lg:block">
@@ -197,7 +313,7 @@ function Home() {
                 Datos relevantes
               </p>
 
-              <h2 className="max-w-2xl text-5xl font-black uppercase leading-[0.92] tracking-[-0.06em] md:text-7xl">
+              <h2 className="deuna-title-xl max-w-2xl text-5xl font-black uppercase md:text-7xl">
                 Números que hablan
                 <span className="text-[#8c40f5]">.</span>
               </h2>
@@ -253,7 +369,7 @@ function Home() {
                 Portafolio
               </p>
 
-              <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white md:text-7xl">
+              <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase text-white md:text-7xl">
                 Proyectos que mueven marcas
                 <span className="text-[#8c40f5]">.</span>
               </h2>
@@ -301,7 +417,7 @@ function Home() {
                     {project.category || 'Proyecto'}
                   </p>
 
-                  <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em] text-white">
+                  <h3 className="deuna-title-card text-3xl font-black uppercase text-white">
                     {project.title}
                   </h3>
 
@@ -338,7 +454,7 @@ function Home() {
     Servicios
   </p>
 
-  <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+  <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
     De la estrategia a la acción
     <span className="text-[#8c40f5]">.</span>
   </h2>
@@ -450,7 +566,7 @@ function Home() {
       Triple impacto
     </p>
 
-    <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.88] tracking-[-0.06em] md:text-7xl">
+    <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
       Impacto real
       <span className="block">más allá</span>
       <span className="block">
@@ -489,7 +605,7 @@ function Home() {
       Económico
     </p>
 
-    <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em]">
+    <h3 className="deuna-title-card text-3xl font-black uppercase">
       Crecimiento con dirección.
     </h3>
 
@@ -515,7 +631,7 @@ function Home() {
       Social
     </p>
 
-    <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em]">
+    <h3 className="deuna-title-card text-3xl font-black uppercase">
       Valor para las personas.
     </h3>
 
@@ -541,7 +657,7 @@ function Home() {
       Ambiental
     </p>
 
-    <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em]">
+    <h3 className="deuna-title-card text-3xl font-black uppercase">
       Comunicación responsable.
     </h3>
 
@@ -579,7 +695,7 @@ function Home() {
             Hablemos
           </p>
 
-          <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+          <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
             Hagamos que las cosas pasen
             <span className="text-[#8c40f5]">.</span>
           </h2>

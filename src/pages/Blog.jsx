@@ -54,7 +54,7 @@ function Blog() {
               Blog
             </p>
 
-            <h1 className="max-w-5xl text-6xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-8xl">
+            <h1 className="deuna-title-xl max-w-5xl text-6xl font-black uppercase md:text-8xl">
               Ideas que abren conversación
               <span className="text-[#8c40f5]">.</span>
             </h1>
@@ -107,7 +107,7 @@ function Blog() {
                     </div>
 
                     <div className="p-7">
-                      <h2 className="text-3xl font-black uppercase leading-none tracking-[-0.05em] transition group-hover:text-[#8c40f5]">
+                      <h2 className="deuna-title-card text-3xl font-black uppercase transition group-hover:text-[#8c40f5]">
                         {post.title}
                       </h2>
 

@@ -1,5 +1,52 @@
 import { Link } from 'react-router-dom'
+import {  MessageCircle } from 'lucide-react'
 import deunaLogo from '../../assets/deuna-logo.svg'
+
+const whatsappNumber = '59177670148'
+
+function InstagramIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" {...props}>
+      <rect x="3" y="3" width="18" height="18" rx="5" strokeWidth="2" />
+      <circle cx="12" cy="12" r="4" strokeWidth="2" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
+function FacebookIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M14 8.5h2.2V5.1C15.8 5 14.6 5 13.4 5c-2.7 0-4.4 1.6-4.4 4.5V12H6v3.8h3V23h3.9v-7.2h3l.5-3.8h-3.5V9.9c0-.9.3-1.4 1.1-1.4Z" />
+    </svg>
+  )
+}
+
+function TikTokIcon(props) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M16.6 3c.3 2.3 1.7 3.8 4 4v3.5c-1.6.1-3-.4-4-1.2v6.2c0 3.4-2.2 5.5-5.4 5.5-3 0-5.2-2.1-5.2-5 0-3.3 2.5-5.3 6.1-5.1v3.6c-1.5-.2-2.5.4-2.5 1.5 0 .9.7 1.5 1.6 1.5 1 0 1.8-.6 1.8-2.1V3h3.6Z" />
+    </svg>
+  )
+}
+
+const socialLinks = [
+  {
+    label: 'Facebook',
+    href: 'https://www.facebook.com/deuna.bo',
+    icon: FacebookIcon,
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/deuna.bo',
+    icon: InstagramIcon,
+  },
+  {
+    label: 'TikTok',
+    href: 'https://www.tiktok.com/@deuna.bo',
+    icon: TikTokIcon,
+  },
+]
 
 function Footer() {
   return (
@@ -10,7 +57,7 @@ function Footer() {
             <img
               src={deunaLogo}
               alt="DE UNA Marketing y Publicidad"
-              className="h-22 w-auto brightness-0 invert"
+              className="h-18 w-auto brightness-0 invert"
             />
           </Link>
 
@@ -18,6 +65,25 @@ function Footer() {
             Agencia de marketing y publicidad que diseña sistemas de marca,
             comunicación y crecimiento con impacto real.
           </p>
+
+          <div className="mt-6 flex items-center gap-3">
+            {socialLinks.map((social) => {
+              const Icon = social.icon
+
+              return (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={social.label}
+                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/55 transition hover:border-[#8c40f5] hover:bg-[#8c40f5] hover:text-white"
+                >
+                  <Icon className="h-[17px] w-[17px]" />
+                </a>
+              )
+            })}
+          </div>
         </div>
 
         <div>
@@ -27,17 +93,29 @@ function Footer() {
 
           <div className="flex flex-col gap-3 text-sm text-white/50">
             <Link to="/portafolio" className="hover:text-white">
-              Proyectos
+              Portafolio
             </Link>
+
             <Link to="/servicios" className="hover:text-white">
               Servicios
             </Link>
+
             <Link to="/blog" className="hover:text-white">
               Blog
             </Link>
+
             <Link to="/impacto" className="hover:text-white">
               Impacto
             </Link>
+
+            <Link to="/equipo" className="hover:text-white">
+              Equipo
+            </Link>
+
+            <Link to="/trabaja-con-nosotros" className="hover:text-white">
+              Trabaja con nosotros
+            </Link>
+
             <Link to="/contacto" className="hover:text-white">
               Contacto
             </Link>
@@ -49,13 +127,26 @@ function Footer() {
             Contacto
           </h3>
 
-          <p className="text-sm leading-7 text-white/50">
-            Torre La Salle – Planta Baja <br />
-            Av. Ovidio Barbery Justiniano <br />
-            Santa Cruz de la Sierra, Bolivia
-          </p>
+          <div className="space-y-3 text-sm leading-6 text-white/50">
+            <p>Torre La Salle – Planta Baja</p>
+            <p>Av. Ovidio Barbery Justiniano</p>
+            <p>Santa Cruz de la Sierra, Bolivia</p>
 
-          <p className="mt-4 text-sm text-white/50">WhatsApp: 77670148</p>
+            <a
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noreferrer"
+              className="group mt-5 flex items-center gap-2 transition hover:text-white"
+            >
+              <MessageCircle
+                size={17}
+                className="text-[#8c40f5] transition group-hover:text-white"
+              />
+              <span>WhatsApp: 77670148</span>
+            </a>
+
+
+          </div>
         </div>
       </div>
 

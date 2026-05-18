@@ -18,7 +18,7 @@ export default function BlogCarousel({ posts = [] }) {
               Blog
             </p>
 
-            <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+            <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
               Ideas que abren conversación
               <span className="text-[#8c40f5]">.</span>
             </h2>
@@ -64,7 +64,7 @@ export default function BlogCarousel({ posts = [] }) {
 
                 {/* contenido */}
                 <div className="p-7">
-                  <h3 className="text-3xl font-black uppercase leading-none tracking-[-0.05em] transition group-hover:text-[#8c40f5]">
+                  <h3 className="deuna-title-card text-3xl font-black uppercase transition group-hover:text-[#8c40f5]">
                     {post.title}
                   </h3>
 

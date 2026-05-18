@@ -9,7 +9,9 @@ import Services from './pages/Services'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Impact from './pages/Impact'
+import Team from './pages/Team'
 import Contact from './pages/Contact'
+import WorkWithUs from './pages/WorkWithUs'
 
 function App() {
   return (
@@ -29,7 +31,11 @@ function App() {
 
         <Route path="/impacto" element={<Impact />} />
 
+        <Route path="/equipo" element={<Team />} />
+
         <Route path="/contacto" element={<Contact />} />
+
+        <Route path="/trabaja-con-nosotros" element={<WorkWithUs />} />
       </Routes>
 
       <Footer />

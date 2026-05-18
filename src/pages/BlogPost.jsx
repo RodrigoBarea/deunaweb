@@ -42,7 +42,7 @@ function BlogPost() {
             Blog
           </p>
 
-          <h1 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-7xl">
+          <h1 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
             Artículo no encontrado
             <span className="text-[#8c40f5]">.</span>
           </h1>
@@ -83,7 +83,7 @@ function BlogPost() {
                 {post.category || 'Blog'}
               </p>
 
-              <h1 className="max-w-5xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-8xl">
+              <h1 className="deuna-title-xl max-w-5xl text-5xl font-black uppercase md:text-8xl">
                 {post.title}
                 <span className="text-[#8c40f5]">.</span>
               </h1>

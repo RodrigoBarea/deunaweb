@@ -213,7 +213,7 @@ function Services() {
             Servicios
           </p>
 
-          <h1 className="max-w-5xl text-6xl font-black uppercase leading-[0.88] tracking-[-0.06em] md:text-8xl">
+          <h1 className="deuna-title-xl max-w-5xl text-6xl font-black uppercase md:text-8xl">
             Catálogo de servicios
             <span className="text-[#8c40f5]">.</span>
           </h1>
@@ -278,7 +278,7 @@ function Services() {
                         {String(index + 1).padStart(2, '0')}
                       </span>
 
-                      <span className="text-lg font-black uppercase leading-none tracking-[-0.04em]">
+                      <span className="deuna-title-card text-lg font-black uppercase">
                         {service.title}
                       </span>
                     </div>
@@ -301,7 +301,7 @@ function Services() {
                   {activeGroup.label}
                 </p>
 
-                <h2 className="max-w-3xl text-5xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-6xl">
+                <h2 className="deuna-title-xl max-w-3xl text-5xl font-black uppercase md:text-6xl">
                   {activeService.title}
                   <span className="text-[#8c40f5]">.</span>
                 </h2>

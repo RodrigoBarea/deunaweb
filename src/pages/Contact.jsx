@@ -76,7 +76,7 @@ ${formData.message}
               Contacto
             </p>
 
-            <h1 className="max-w-5xl text-6xl font-black uppercase leading-[0.88] tracking-[-0.06em] md:text-8xl">
+            <h1 className="deuna-title-xl max-w-5xl text-6xl font-black uppercase md:text-8xl">
               Hablemos de tu próximo movimiento
               <span className="text-[#8c40f5]">.</span>
             </h1>
@@ -151,7 +151,7 @@ ${formData.message}
                       Empecemos
                     </p>
 
-                    <h2 className="max-w-lg text-4xl font-black uppercase leading-[0.9] tracking-[-0.06em] md:text-5xl">
+                    <h2 className="deuna-title-xl max-w-lg text-4xl font-black uppercase md:text-5xl">
                       Cuéntanos sobre tu marca
                       <span className="text-[#8c40f5]">.</span>
                     </h2>
