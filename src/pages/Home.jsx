@@ -173,7 +173,7 @@ function Home() {
 {/* QUIÉNES SOMOS */}
 <section className="relative overflow-hidden bg-black px-6 py-28 text-white">
   <div className="pointer-events-none absolute inset-0">
-    <div className="absolute right-[-260px] top-[-180px] h-[720px] w-[720px] rounded-full bg-[#8c40f5]/14 blur-[170px]" />
+    <div className="absolute left-1/2 top-[45%] h-[760px] w-[760px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#8c40f5]/12 blur-[180px]" />
   </div>
 
   <div className="relative z-10 mx-auto max-w-7xl">
