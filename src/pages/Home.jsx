@@ -5,7 +5,7 @@ import { supabase } from '../lib/supabaseClient'
 import deunaSymbol from '../assets/deuna-symbol.svg'
 import servicesCover from '../assets/services-cover.jpg'
 import BlogCarousel from "../components/BlogCarousel";
-import pdcaSystem from '../assets/pdca-system.png'
+import PdcaInfographic from '../components/PdcaInfographic'
 
 const fallbackProjects = [
   {
@@ -173,68 +173,63 @@ function Home() {
 {/* QUIÉNES SOMOS */}
 <section className="relative overflow-hidden bg-black px-6 py-28 text-white">
   <div className="pointer-events-none absolute inset-0">
-    <div className="absolute right-[-240px] top-[-180px] h-[720px] w-[720px] rounded-full bg-[#8c40f5]/14 blur-[170px]" />
+    <div className="absolute right-[-260px] top-[-180px] h-[720px] w-[720px] rounded-full bg-[#8c40f5]/14 blur-[170px]" />
   </div>
 
   <div className="relative z-10 mx-auto max-w-7xl">
-    <div className="grid gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
-      {/* CONTENIDO */}
+    {/* FILA SUPERIOR: TÍTULO + INFO */}
+    <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+      {/* TÍTULO IZQUIERDA */}
       <div>
-        <p className="mb-5 text-xs font-black uppercase tracking-[0.4em] text-[#8c40f5]">
+        <p className="mb-6 text-xs font-black uppercase tracking-[0.4em] text-[#8c40f5]">
           Quiénes somos
         </p>
 
-        <h2 className="deuna-title-xl max-w-4xl text-5xl font-black uppercase md:text-7xl">
+        <h2 className="deuna-title-xl max-w-4xl text-[clamp(3rem,4.2vw,4.9rem)] font-black uppercase leading-[0.88] tracking-[-0.06em] text-white">
           Una agencia que convierte ideas en dirección
           <span className="text-[#8c40f5]">.</span>
         </h2>
+      </div>
 
-        <div className="mt-10 rounded-[2rem] border border-white/10 bg-[#0b0b0b] p-7 md:p-8">
-          <p className="text-base leading-8 text-white/70">
-            DE UNA es una agencia de marketing y publicidad que diseña sistemas
-            de comunicación para marcas que quieren crecer con claridad,
-            coherencia e impacto real.
-          </p>
+      {/* CONTENEDOR INFO / MISIÓN / VISIÓN */}
+      <div className="rounded-[2rem] border border-white/10 bg-[#0b0b0b] p-7 md:p-8 lg:p-10">
+        <p className="text-base leading-8 text-white/70">
+          DE UNA es una agencia de marketing y publicidad que diseña sistemas de
+          comunicación para marcas que quieren crecer con claridad, coherencia e
+          impacto real.
+        </p>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div className="border-t border-white/10 pt-6">
-              <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
-                Misión
-              </p>
+        <div className="mt-9 grid gap-8 md:grid-cols-2">
+          <div className="border-t border-white/10 pt-6">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+              Misión
+            </p>
 
-              <p className="text-sm leading-7 text-white/60">
-                Impulsar marcas con propósito a través de la creatividad
-                estratégica, la innovación y la eficiencia, generando impacto
-                real en las personas, en los negocios y en el entorno.
-              </p>
-            </div>
+            <p className="text-sm leading-7 text-white/60">
+              Impulsar marcas con propósito a través de la creatividad
+              estratégica, la innovación y la eficiencia, generando impacto real
+              en las personas, en los negocios y en el entorno.
+            </p>
+          </div>
 
-            <div className="border-t border-white/10 pt-6">
-              <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
-                Visión
-              </p>
+          <div className="border-t border-white/10 pt-6">
+            <p className="mb-4 text-xs font-black uppercase tracking-[0.25em] text-[#8c40f5]">
+              Visión
+            </p>
 
-              <p className="text-sm leading-7 text-white/60">
-                Ser la agencia creativa de nueva generación que redefine cómo
-                las marcas crean valor, liderando desde Bolivia hacia un modelo
-                de comunicación con triple impacto: económico, social y
-                ambiental.
-              </p>
-            </div>
+            <p className="text-sm leading-7 text-white/60">
+              Ser la agencia creativa de nueva generación que redefine cómo las
+              marcas crean valor, liderando desde Bolivia hacia un modelo de
+              comunicación con triple impacto: económico, social y ambiental.
+            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      {/* INFOGRAFÍA */}
-      <div className="relative">
-        <div className="relative overflow-hidden rounded-[2rem]">
-          <img
-            src={pdcaSystem}
-            alt="PDCA DE UNA System"
-            className="h-auto w-full object-cover"
-          />
-        </div>
-      </div>
+    {/* INFOGRAFÍA ABAJO */}
+    <div className="mt-12">
+      <PdcaInfographic />
     </div>
   </div>
 </section>
